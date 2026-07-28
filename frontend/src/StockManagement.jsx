@@ -117,7 +117,7 @@ export default function StockManagement() {
               type="number"
               className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm mt-1"
               value={newItem.price}
-              onChange={(e) => setNewItem({ ...newItem, pric: e.target.value })}
+              onChange={(e) => setNewItem({ ...newItem, price: e.target.value })}
             />
           </div>
           <div>
@@ -231,15 +231,15 @@ export default function StockManagement() {
                       {isEditing ? (
                         <button
                           onClick={() => saveEdit(item.id)}
-                          className="text-xs font-semibold text-white px-3 py-1 rounded-md"
-                          style={{ ackgroundColor: GOLD }}
+                          className="cursor-pointer text-xs font-semibold text-white px-3 py-1 rounded-md"
+                          style={{ backgroundColor: GOLD }}
                         >
                           Save
                         </button>
                       ) : (
                         <button
                           onClick={() => startEdit(item)}
-                          className="text-gray-400 hover:text-gray-700"
+                            className="cursor-pointer text-gray-400 hover:text-gray-700"
                         >
                           <Pencil size={15} />
                         </button>
