@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/react";
+
 import {
   Crown,
   LayoutDashboard,
@@ -69,7 +71,7 @@ export default function App() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   const currentTab = TABS.find((t) => t.key === page);
-  
+
   return (
     <div className="h-screen bg-gray-50 font-sans flex overflow-hidden">
       {/* Desktop sidebar - always visible on lg+, full height, fixed in place */}
@@ -127,6 +129,7 @@ export default function App() {
           {page === "stock" && <StockManagement />}
         </main>
       </div>
+      <Analytics />
     </div>
   );
 }
