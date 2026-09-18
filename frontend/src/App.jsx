@@ -28,7 +28,7 @@ function SidebarContent({ page, setPage, onNavigate }) {
     <>
       <div className="px-6 py-7 flex flex-col items-center border-b border-white/10">
         <Crown size={28} style={{ color: GOLD }} />
-        <div className="mt-2 font-bold tracking-widest text-base capitalize" style={{ color: GOLD }}>
+        <div className="mt-2 font-bold tracking-widest text-base" style={{ color: GOLD }}>
           {app_name}
         </div>
         <div className="text-[10px] tracking-[0.2em] text-gray-400 mt-0.5">
