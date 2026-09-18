@@ -19,7 +19,8 @@ const TABS = [
   { key: "dashboard", label: "Dashboard", icon: LayoutDashboard },
   { key: "pos", label: "Point of Sale", icon: ShoppingCart },
   { key: "stock", label: "Stock Management", icon: Package },
-];
+]; 
+const author = "Ronoh"
 
 function SidebarContent({ page, setPage, onNavigate }) {
   return (
@@ -59,7 +60,7 @@ function SidebarContent({ page, setPage, onNavigate }) {
         <Crown size={16} style={{ color: GOLD }} />
         <div className="text-xs text-gray-300">
           Welcome,
-          <div className="font-semibold text-white">Administrator</div>
+          <div className="font-semibold text-white">{author}</div>
         </div>
       </div>
     </>
