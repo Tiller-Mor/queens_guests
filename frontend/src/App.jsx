@@ -20,8 +20,8 @@ const TABS = [
   { key: "pos", label: "Point of Sale", icon: ShoppingCart },
   { key: "stock", label: "Stock Management", icon: Package },
 ]; 
-const author = "Ronoh"
-const app_name = "RONOH"
+const author = "Queens"
+const app_name = "QUEENS"
 
 function SidebarContent({ page, setPage, onNavigate }) {
   return (
