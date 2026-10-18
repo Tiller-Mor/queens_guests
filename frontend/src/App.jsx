@@ -21,7 +21,7 @@ const TABS = [
   { key: "stock", label: "Stock Management", icon: Package },
 ]; 
 const author = "Queens"
-const app_name = "QUEENS"
+const app_name = "RONOH"
 
 function SidebarContent({ page, setPage, onNavigate }) {
   return (
